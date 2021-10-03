@@ -1,17 +1,20 @@
 import React from 'react';
-import About from '../About/About';
-import Friends from '../Friends/Friends';
-import Home from '../Home/Home';
-
+import { NavLink } from 'react-router-dom';
+ import './Header.css'
+import logo from '../../images/logo.jpg';
 const Header = () => {
     return (
-        <div   className="d-flex text-center  " > 
-           <Home ></Home> 
-           <About  ></About>
-           <Friends  ></Friends>
-
+        <div className="header">
+            
+            <img className="logo" src= {logo} alt="" />
+            
+            <nav>
+                <NavLink  to ="/home">Home</NavLink>
+                <NavLink  to ="/about">About</NavLink>
+                <NavLink  to ="/friends">Friends</NavLink>
+            </nav>
         </div>
-    );
+    )
 };
 
 export default Header;

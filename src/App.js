@@ -13,7 +13,7 @@ import NotFound from './components/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
       <Header></Header>
         <MyLineChart></MyLineChart>
         <Switch>
@@ -35,8 +35,8 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-      */}
-      <Friends></Friends>
+     
+      {/* <Friends></Friends> */}
       
     </div>
   );
