@@ -7,7 +7,7 @@ const Todo = (props) => {
     const {userId,id,title,completed} = props.todo;
      
     
-  
+  const url = `/todo/${id}`;
     
     return (
        
@@ -22,7 +22,7 @@ const Todo = (props) => {
                 
                
                <div className="btn ">
-                  <Link to={ `/todo/${id}`} ><button> todo</button>  </Link>
+                  <Link to={url} ><button> todo</button>  </Link>
                 </div>
                  
               

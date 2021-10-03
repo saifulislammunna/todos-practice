@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {  useHistory } from 'react-router-dom';
 import './NotFound.css'
 const NotFound = () => {
+const history = useHistory();
+const handleClick = () => {
+    history.push('/home')
+}
     return (
         <div >
             <h1>404</h1>
             <p>Page not found</p>
-            <Link to="/home"> <button className="back-to-homepage">Home Page</button></Link>
+              <button className="back-to-homepage" onClick={handleClick}>Home Page</button> 
         </div>
     );
 };
