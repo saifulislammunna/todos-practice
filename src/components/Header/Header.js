@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
  import './Header.css'
 import logo from '../../images/logo.jpg';
+import { Table } from 'react-bootstrap';
 const Header = () => {
     return (
         <div className="header">
@@ -11,8 +12,11 @@ const Header = () => {
             <nav>
                 <NavLink  to ="/home">Home</NavLink>
                 <NavLink  to ="/about">About</NavLink>
-                <NavLink  to ="/friends">Friends</NavLink>
+                <NavLink  to ="/todos">Todos</NavLink>
+                <NavLink  to ="/charts">Charts</NavLink>
+
             </nav>
+        
         </div>
     )
 };
