@@ -1,5 +1,5 @@
 import React from 'react';
-import { CartesianGrid, Legend, Line, LineChart,   XAxis, YAxis } from 'recharts';
+import {   Legend, Line, LineChart,   XAxis, YAxis } from 'recharts';
 
 const MyLineChart = () => {
     const data = [
