@@ -22,7 +22,7 @@ const Todo = (props) => {
                 
                
                <div className="btn ">
-                  <Link to={ `/todos/${id}`} ><button>todo</button></Link>
+                  <Link to={ `/todo/${id}`} ><button> todo</button>  </Link>
                 </div>
                  
               
