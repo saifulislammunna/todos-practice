@@ -10,6 +10,12 @@ const Todo = (props) => {
   const url = `/todo/${id}`;
     
     return (
+    //     <tr>
+    //   <th scope="row">1</th>
+    //   <td>Mark</td>
+    //   <td>Otto</td>
+    //   <td>@mdo</td>
+    // </tr>
        
         <div className=" d-flex single-todo">
            

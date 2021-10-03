@@ -9,7 +9,7 @@ const Header = () => {
             
             <img className="logo" src= {logo} alt="" />
             
-            <nav>
+            <nav className="custom-style">
                 <NavLink  to ="/home">Home</NavLink>
                 <NavLink  to ="/about">About</NavLink>
                 <NavLink  to ="/todos">Todos</NavLink>

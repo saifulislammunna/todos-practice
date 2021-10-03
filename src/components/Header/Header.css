@@ -19,3 +19,6 @@
 .header nav a:hover{
     background-color: lightgray;
 }
+.custom-style{
+    display: block;
+}

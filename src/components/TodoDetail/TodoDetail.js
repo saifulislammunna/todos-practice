@@ -14,7 +14,7 @@ const TodoDetail = () => {
     return (
         <div>
             <h3>Todo Detail of: {todo.id}</h3>
-            <h1>{todo.useId} </h1>
+            <h1>{todo.userId} </h1>
             <h2>{todo.title}</h2>
             <h3>{todo.completed?"true":"false"}</h3>
         </div>
