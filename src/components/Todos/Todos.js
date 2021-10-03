@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { useParams } from 'react-router';
+ 
 import Todo from '../Todo/Todo';
 import './todos.css'
 const Todos = () => {
+    // const {id} = useParams();
     const [todos,setTodos] = useState([]);
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/todos')

@@ -1,9 +1,13 @@
 import React from 'react';
-import { Stack  } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+ 
 import './todo.css'
  
 const Todo = (props) => {
-    const {userId,id,title,completed} = props.todo
+    const {userId,id,title,completed} = props.todo;
+     
+    
+  
     
     return (
        
@@ -14,14 +18,14 @@ const Todo = (props) => {
             <div className="mx-5  d-flex  ">
                 <h2 className="mx-5">{id}</h2>
                 <h3 className="mx-5">{title}</h3>
-                <p className="mx-5">{completed}</p>
-              <Stack direction="horizontal" gap={3}>
-   
-                   <div className="vr" />
-                <div className="btn ">
-                    <button className= "ms-auto" >todo</button>
+                <p className="mx-5">completed:{completed?"true":"false"}</p>
+                
+               
+               <div className="btn ">
+                  <Link to={ `/todos/${id}`} ><button>todo</button></Link>
                 </div>
-             </Stack>
+                 
+              
             
             </div>  
             <br />

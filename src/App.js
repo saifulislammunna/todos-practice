@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Todos from './components/Todos/Todos';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NotFound from './components/NotFound/NotFound';
+import Todo from './components/Todo/Todo';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route exact path="/">
              <Home></Home>
+          </Route>
+          <Route path="/todos/:id">
+              <Todo></Todo>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
